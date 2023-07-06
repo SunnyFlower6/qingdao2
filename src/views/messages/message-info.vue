@@ -74,6 +74,7 @@
           <span v-if="rowData.filepath == 'N' && rowData.filepath != '' " > 【数据导出已执行】</span>
           <span v-if="rowData.filepath != 'N' && rowData.filepath != '' " > 【数据导出未执行】</span>
         </div>
+        {{rowData}}
       </Cell>
       <Cell v-if="rowData.path != null">
         <a @click.stop="transferClick">跳转</a>
